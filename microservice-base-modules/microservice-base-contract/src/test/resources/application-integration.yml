@@ -1,0 +1,11 @@
+microservice-base:
+  customers-resources-url: /api/v1/customers
+
+spring:
+    profiles: integration
+#clients:
+#  blah:
+#    server: http://localhost:8090
+#resource: ${microservice-base.customers-resources-url}
+#  otherblah:
+#      server: http://localhost:8090
