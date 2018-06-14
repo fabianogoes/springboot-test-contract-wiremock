@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.microservicebase.ws.contract.CustomerRestContract;
+import com.github.tomakehurst.wiremock.common.SingleRootFileSource;
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
 import com.jayway.restassured.RestAssured;
@@ -27,7 +28,8 @@ public class CustomerIntegrationTestCommon {
 
     @Rule
     public WireMockRule wireMockRule = new WireMockRule(WireMockConfiguration.wireMockConfig().port(MOCK_HTTP_PORT)
-            .httpsPort(MOCK_HTTPS_PORT));
+            .httpsPort(MOCK_HTTPS_PORT)
+            .fileSource(new SingleRootFileSource("classpath:__files")));
 
     public static final String CONTENT_TYPE_KEY = "Content-Type";
     public static final int MOCK_HTTP_PORT = 8089;
