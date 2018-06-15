@@ -11,3 +11,5 @@
 - [Wiremock Body Transformer](https://github.com/opentable/wiremock-body-transformer)
 - [spring_cloud_contract_wiremock](http://cloud.spring.io/spring-cloud-static/spring-cloud-contract/1.1.2.RELEASE/#_spring_cloud_contract_wiremock)
 - [JsonPath](https://github.com/json-path/JsonPath/blob/master/json-path-assert/src/test/java/com/jayway/jsonpath/matchers/JsonPathMatchersTest.java)
+- [How to Read a File in Java
+](http://www.baeldung.com/reading-file-in-java)
